@@ -277,4 +277,11 @@ main>section {
         grid-template-columns: repeat(2, 1fr);
         
     }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
