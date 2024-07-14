@@ -33,17 +33,14 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary {
+.btn-primary{
+    background-color: #FF900E;
     color: white;
+    padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 600;
-    /* padding: 21px 25px; */
     border-radius: 8px;
-    width: 180px;
-    height: 64px;
     border: none;
-    background-color: rgb(255, 144, 14);
-
 }
 
 main {
@@ -149,7 +146,21 @@ main>section {
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
-    
+}
+.featured-architect img{
+    width: 100%;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* some facts related style */
@@ -230,6 +241,13 @@ main>section {
     .sponsors-companies{
         justify-items: center;
         gap: 50px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
 
