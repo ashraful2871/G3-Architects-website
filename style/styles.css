@@ -14,7 +14,7 @@
     display: flex;
 }
 
-.text-primary{
+.text-primary {
     color: rgb(255, 144, 14);
 
 }
@@ -42,15 +42,22 @@
     width: 180px;
     height: 64px;
     border: none;
-    background-color: rgb(255, 144, 14);
+    background-color: 5rgb(25, 144, 14);
 
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 /* header style */
@@ -95,48 +102,81 @@ main > section{
     font-size: 4rem;
 }
 
-.banner-img{
+.banner-img {
     max-width: 100%;
 }
 
 /* team and features related style */
 
-.teams{
+.teams {
     align-items: center;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
 }
-.our-features{
+
+.our-features {
     margin-left: 73px;
     max-width: 530px;
 }
-.features-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
 
-.features-description{
 
-}
-#list{
+.features-description {}
+
+#list {
     color: rgb(114, 114, 114);
     font-weight: 500;
 }
 
+
+/* some facts related style */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.fact-card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+}
 /* responsive style */
 /* small devices responsive */
 
 @media screen and (max-width:576px) {
-    .navbar, .teams{
+
+    .navbar,
+    .teams {
         flex-direction: column-reverse;
     }
-    .team-img-container{
+
+    .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .our-features{
+
+    .our-features {
         margin-left: 20px;
     }
 }
@@ -144,10 +184,11 @@ main > section{
 /* medium devices responsive */
 
 @media screen and (min-width:576px) and (max-width:920px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 50px auto;
     }
 }
